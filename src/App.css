@@ -1,0 +1,225 @@
+/* .App {
+    text-align: center;
+  } */
+
+* {
+  font-family: 'Montserrat';
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  background-color: #0066cc;
+}
+
+label {
+  color: black;
+  font-size: 14px;
+}
+
+table {
+  border: 100px;
+}
+
+table {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th,
+tfoot td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #61dafb;
+  color: black;
+}
+
+.box {
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.download {
+  text-align: center;
+}
+
+.downloadChild {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  vertical-align: middle;
+}
+
+.categories {
+  text-align: center;
+  padding: 20px;
+}
+
+.category {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white !important;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.tableValues {
+  background-color: lightblue; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+a {
+  color: black !important;
+}
+
+.form {
+  text-decoration: underline;
+  color: rgb(18, 176, 176);
+}
+
+.goBack {
+  padding: 15px 40px;
+}
+
+.form {
+  padding: 0 10% 0 10%;
+}
+
+.submitBtn {
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  background-color: #25ace1;
+  margin: 20px;
+}
+
+.formTitle {
+  color: gray;
+  padding-top: 1%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.categoriesList {
+  font-size: 18px;
+  margin: 2% 0 0 10%;
+  object-fit: cover;
+}
+
+.checkbox {
+  opacity: 100 !important;
+  pointer-events: all !important;
+}
+
+.inputValue {
+  width: 60% !important;
+}
+
+li {
+  list-style-type: circle !important;
+}
+
+.Sticky {
+  position: sticky;
+  top: 0;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.btn {
+  text-transform: capitalize !important;
+}
+
+.btn:focus {
+  -webkit-appearance: none;
+  outline: none !important;
+  outline-offset: none !important;
+}
+
+.input {
+  text-align: center;
+}
+
+html,
+body,
+#app,
+#app > div {
+  height: 100%;
+}
+
+label {
+  font-size: 20px;
+}
