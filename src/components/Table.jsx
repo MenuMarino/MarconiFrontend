@@ -11,6 +11,7 @@ import next from '../assets/Artboard 19db.png';
 import previous from '../assets/Artboard 18db.png';
 import nextDisabled from '../assets/next-gris.png';
 import previousDisabled from '../assets/pre-gris.png';
+import '../styles/table.css';
 
 function Table({ products, headers, redirect }) {
   function CreateTable() {
@@ -53,7 +54,9 @@ function Table({ products, headers, redirect }) {
     return (
       <>
         <div style={{ padding: '50px' }}>
-          <Filter filter={globalFilter} setFilter={setGlobalFilter} />
+          <div style={{ paddingBottom: '20px' }}>
+            <Filter filter={globalFilter} setFilter={setGlobalFilter} />
+          </div>
           <div style={{ textAlign: 'center' }}>
             <div className="table">
               <table {...getTableProps()} className="center">

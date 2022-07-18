@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/pages.css';
 import '../styles/data.css';
+import AllData from './AllData';
 
 export default function Pages() {
   const navigate = useNavigate();
@@ -44,15 +45,16 @@ export default function Pages() {
         {pages.length ? (
           pages.map((pageId) => (
             <>
-              <div className="page">
-                <Link to={'/data/' + pageId}>{pageId}</Link>
-              </div>
+              <Link className="page" to={'/data/' + pageId}>
+                {pageId}
+              </Link>
             </>
           ))
         ) : (
           <h2>No data available</h2>
         )}
       </div>
+      <div>{pages.length ? <AllData /> : <div></div>}</div>
     </>
   );
 }
