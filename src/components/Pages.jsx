@@ -54,7 +54,7 @@ export default function Pages() {
           <h2>No data available</h2>
         )}
       </div>
-      <div>{pages.length ? <AllData /> : <div></div>}</div>
+      {pages.length ? <AllData /> : <div></div>}
     </>
   );
 }
